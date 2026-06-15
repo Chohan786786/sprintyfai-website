@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SprintyfAI Agentic Solutions</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.1/tailwind.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --background: #09090b;
+    --card: #18181b;
+    --border: #27272a;
+    --foreground: #fafafa;
+    --muted: #a1a1aa;
+    --accent-teal: #00f5d4;
+    --accent-violet: #9b5de5;
+  }
+  * { font-family: 'Inter', sans-serif; }
+  body { background-color: var(--background); color: var(--foreground); }
+  .border-token { border: 1px solid var(--border); }
+  .text-muted { color: var(--muted); }
+  .btn-primary {
+    background-color: var(--accent-teal);
+    color: #052e29;
+  }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-outline {
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    background-color: transparent;
+  }
+  .btn-outline:hover { background-color: var(--card); }
+  .badge {
+    border: 1px solid var(--border);
+    color: var(--accent-violet);
+    background-color: rgba(155, 93, 229, 0.08);
+  }
+  .card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+  }
+  .video-placeholder {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+  }
+  .calendly-placeholder {
+    background-color: var(--card);
+    border: 1px dashed var(--border);
+  }
+  .gradient-text {
+    background: linear-gradient(90deg, var(--accent-teal), var(--accent-violet));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+</head>
+<body class="antialiased">
+
+  <!-- ================= NAV ================= -->
+  <header class="border-b border-token">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="font-semibold tracking-tight">SprintyfAI <span class="text-muted font-normal">Agentic Solutions</span></span>
+      <a href="#solution" class="btn-primary text-sm font-medium px-4 py-2 rounded-md transition-colors">Book a demo</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
+    <span class="badge inline-block text-xs font-medium px-3 py-1 rounded-full mb-6">AI agents for B2B CRM teams</span>
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-5">
+      Your CRM, run by <span class="gradient-text">AI agents</span> that never sleep
+    </h1>
+    <p class="text-muted text-lg max-w-2xl mx-auto mb-10">
+      SprintyfAI builds custom agents that qualify leads, update records, and follow up with prospects automatically — inside the CRM your team already uses.
+    </p>
+
+    <!-- YouTube placeholder -->
+    <div class="video-placeholder aspect-video max-w-3xl mx-auto rounded-xl flex flex-col items-center justify-center">
+      <div class="w-14 h-14 rounded-full border border-token flex items-center justify-center mb-3">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <p class="text-muted text-sm">YouTube video placeholder</p>
+      <p class="text-muted text-xs mt-1">Replace this block with your embed code</p>
+    </div>
+  </section>
+
+  <!-- ================= PROBLEM ================= -->
+  <section class="max-w-5xl mx-auto px-6 pb-24">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight mb-3">Your CRM is full of work nobody wants to do</h2>
+      <p class="text-muted max-w-xl mx-auto">Reps spend hours on tasks that don't close deals — and leads go cold while they catch up.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="card rounded-xl p-6">
+        <h3 class="font-semibold mb-2">Slow lead response</h3>
+        <p class="text-muted text-sm">New leads sit untouched for hours, and interest fades fast.</p>
+      </div>
+      <div class="card rounded-xl p-6">
+        <h3 class="font-semibold mb-2">Stale records</h3>
+        <p class="text-muted text-sm">Deal stages, notes, and contact details fall out of date.</p>
+      </div>
+      <div class="card rounded-xl p-6">
+        <h3 class="font-semibold mb-2">Missed follow-ups</h3>
+        <p class="text-muted text-sm">Prospects slip through the cracks between busy days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOLUTION ================= -->
+  <section id="solution" class="max-w-5xl mx-auto px-6 pb-24">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight mb-3">Agents that work your CRM for you</h2>
+      <p class="text-muted max-w-xl mx-auto">
+        SprintyfAI agents qualify leads, update records, and send follow-ups the moment they're needed — so your team can focus on closing. Book a call to see it running on your own data.
+      </p>
+    </div>
+
+    <!-- Calendly embed -->
+    <div class="rounded-xl overflow-hidden border border-token">
+      <iframe
+        src="https://calendly.com/nriaz22/30min?hide_event_type_details=0&hide_gdpr_banner=1"
+        width="100%"
+        height="700"
+        frameborder="0"
+        title="Schedule a call with SprintyfAI">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-token">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-center text-muted text-sm">
+      © 2026 SprintyfAI Agentic Solutions. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
