@@ -94,20 +94,6 @@
     container.style.display = container.style.display === 'none' ? 'block' : 'none';
   });
 </script>
-  <script>
-  const DOMAIN_KEY = 'domain_pk_6a2e991cceec81949943e769a9a81efa0c86752bc87c611a'; // Replace with your actual domain key
-  const API_URL = 'https://openai.secondbrainos.com/chatkit';
-
-  const customFetch = (url, options = {}) => {
-    return fetch(url, {
-      ...options,
-      headers: {
-        ...options.headers,
-        'X-Domain-Key': DOMAIN_KEY,
-      },
-    });
-  };
-
 
     if (kit && kit.setOptions) {
       kit.setOptions({
@@ -141,8 +127,6 @@
     }
   }
 
-  initChatKit();
-</script>
   
   
   <section class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
